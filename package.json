@@ -1,0 +1,29 @@
+{
+  "name": "RegionCommanderProxy",
+  "version": "0.0.1",
+  "description": "Proxy or throughput for the Region Commander API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reecebedding/RegionCommanderProxy.git"
+  },
+  "keywords": [
+    "Region",
+    "Commander"
+  ],
+  "author": "Natalie Cruella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reecebedding/RegionCommanderProxy/issues"
+  },
+  "homepage": "https://github.com/reecebedding/RegionCommanderProxy",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+  }
+}
