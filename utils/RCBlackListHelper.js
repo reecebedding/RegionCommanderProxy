@@ -9,6 +9,8 @@
     
     RCBlack.Search = function(searchTerm, next){
         
+        console.log("Search request for  %s", searchTerm);
+        
         var options = {
             host: "http://rc.goonfleet.com",
             port: 80,
