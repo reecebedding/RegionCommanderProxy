@@ -2,12 +2,15 @@ var http = require("http");
 var express = require("express");
 var app = express();
 var bodyParseer = require("body-parser");
+var controllers = require("./controllers");
 
 var server = app.listen(3000, function(){
 
     var host = server.address().address;
     var port = server.address().port;
     
-    console.log("Server running at %s:%s", host, port);
+    console.log("Server running at http://%s:%s", host, port);
     
-})
+});
+
+controllers.init(app);
