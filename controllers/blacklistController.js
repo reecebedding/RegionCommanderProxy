@@ -8,7 +8,7 @@
            
             var searchTerm = req.params.searchTerm;
                                     
-            blHelper.Search(searchTerm, function(err, results){                
+            blHelper.Search(searchTerm, req, function(err, results){                
                 if(err){
                     res.status(500).send({ error: err });
                 }else{

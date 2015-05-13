@@ -7,9 +7,9 @@
     var botKey = "THIS NEEDS TO BE SET";
    
     
-    RCBlack.Search = function(searchTerm, next){
+    RCBlack.Search = function(searchTerm, req, next){
         
-        console.log("Search request for  %s", searchTerm);
+        console.log("Search request for %s from IP: %s", searchTerm, req.connection.remoteAddress);
         
         var options = {
             host: "http://rc.goonfleet.com",
